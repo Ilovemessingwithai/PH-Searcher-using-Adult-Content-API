@@ -1,0 +1,5 @@
+{
+  "name": "Adult Content Explorer",
+  "description": "A modern web application to search and browse for adult content using the Adult Content API. Features a clean interface, responsive design, and pagination for an enhanced user experience.",
+  "requestFramePermissions": []
+}
