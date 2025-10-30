@@ -47,7 +47,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ video, onVideoSelect, index }) =>
                 </span>
             </div>
             <div className="p-3">
-                <h3 className="text-sm font-semibold text-gray-200 truncate group-hover:text-indigo-400 transition-colors duration-300" title={video.title}>
+                <h3 className="text-sm font-semibold text-gray-200 truncate shimmer-text" title={video.title}>
                     {video.title}
                 </h3>
                  <div className="flex items-center justify-between text-xs text-gray-400 mt-2">

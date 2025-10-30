@@ -8,6 +8,7 @@ import PaginationComponent from './components/Pagination';
 import Loader from './components/Loader';
 import VideoModal from './components/VideoModal';
 import ParticleBackground from './components/ParticleBackground';
+import CustomCursor from './components/CustomCursor';
 
 const App: React.FC = () => {
     const [videos, setVideos] = useState<Video[]>([]);
@@ -72,11 +73,12 @@ const App: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-gray-900 text-gray-200">
+            <CustomCursor />
             <ParticleBackground />
             <div className={selectedVideo ? 'content-wrapper-blurred' : ''}>
                 <header className="bg-gray-900/70 backdrop-blur-lg sticky top-0 z-10 shadow-lg border-b border-gray-700/50 py-4">
                     <div className="container mx-auto px-4">
-                        <h1 className="text-4xl font-bold text-white text-center mb-4 font-heading tracking-wider">Adult Content Explorer</h1>
+                        <h1 className="text-5xl font-bold text-white text-center mb-4">Adult Content Explorer</h1>
                         <SearchBar onSearch={handleSearch} />
                     </div>
                 </header>
@@ -86,7 +88,7 @@ const App: React.FC = () => {
                     
                     {error && (
                         <div className="text-center my-10 p-4 bg-red-900/50 border border-red-700 rounded-lg">
-                            <h2 className="text-2xl font-semibold text-red-400 font-heading">Error</h2>
+                            <h2 className="text-2xl font-semibold text-red-400">Error</h2>
                             <p className="text-red-300 mt-2">{error}</p>
                         </div>
                     )}
@@ -106,7 +108,7 @@ const App: React.FC = () => {
                     
                     {!isLoading && !error && videos.length === 0 && (
                          <div className="text-center my-10 text-gray-500">
-                            <h2 className="text-3xl font-semibold font-heading">
+                            <h2 className="text-3xl font-semibold">
                                 {query ? 'No Results Found' : 'Explore the Collection'}
                             </h2>
                             <p className="mt-2 text-lg">

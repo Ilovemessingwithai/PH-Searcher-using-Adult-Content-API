@@ -20,11 +20,11 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 placeholder="Search Pornhub for videos..."
-                className="input-glow-focus w-full px-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition duration-200"
+                className="input-glow-focus w-full px-6 py-3 bg-gray-700 text-white border border-gray-600 rounded-l-full focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition duration-200"
             />
             <button
                 type="submit"
-                className="glow-on-hover px-6 py-3 bg-indigo-600 text-white font-semibold rounded-r-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition duration-200 flex items-center"
+                className="glow-on-hover px-6 py-3 bg-indigo-600 text-white font-semibold rounded-r-full hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition duration-200 flex items-center"
                 aria-label="Search"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
